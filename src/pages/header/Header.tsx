@@ -59,7 +59,7 @@ const Header = () => {
         </div>
       )}
       {showMenu && (
-        <div className="absolute left-0 p-1 sm:p-7 md:p-0 pl-0 py-6 sm:py-8 md:py-12 bg-gradient-to-b from-[#464646] to-black w-fit border-b-2 border-white border-r-2">
+        <div className="absolute left-0 md:p-0 pl-0 py-6 sm:py-8 md:py-12 bg-gradient-to-b from-[#464646] to-black w-fit border-b-2 border-white border-r-2">
           <ul className="uppercase grid gap-2 sm:gap-4 md:gap-6">
             {menuItems.map((item) => (
               <li
@@ -77,10 +77,14 @@ const Header = () => {
           <ul className="grid">
             {wallets.map((wallet) => (
               <li
-                className="flex items-center px-16 gap-4 pr-24 hover:bg-black py-3 rounded-sm"
+                className="flex items-center px-8 md:px-12 lg:px-16 text-[10px] sm:text-[12px] md:text-[14px] gap-4 pr-8 md:pr-16 lg:pr-24 hover:bg-black py-3 rounded-sm"
                 key={wallet.name}
               >
-                <img className="w-8" src={wallet.imgSrc} alt={wallet.name} />
+                <img
+                  className="w-5 md:w-6 lg:w-8"
+                  src={wallet.imgSrc}
+                  alt={wallet.name}
+                />
                 {wallet.name}
               </li>
             ))}

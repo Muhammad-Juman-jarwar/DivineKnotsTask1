@@ -10,23 +10,23 @@ const Footer = () => {
       <div className="bg-[#adadad] pt-12">
         <li
           className={
-            "py-4 bg-black text-white text-center w-fit px-8 flex justify-center -mt-11 items-center text-md transition-all duration-100 ease-linear gap-6 group fixed"
+            "py-4 bg-black cursor-pointer text-white text-center w-fit px-6 md:px-10 lg:px-9 flex justify-center -mt-11 items-center text-sm md:text-md transition-all duration-100 ease-linear gap-2 md:gap-4 lg:gap-6 group fixed"
           }
           onClick={() => setShowMenu(!showMenu)}
         >
           <div className="flex flex-col justify-around w-5 h-5 cursor-pointer">
-            <div className="h-[0.8px] bg-white transition-all duration-500 ease-in-out "></div>
-            <div className="h-[0.8px] bg-white transition-all duration-500 ease-in-out "></div>
-            <div className="h-[0.8px] bg-white transition-all duration-500 ease-in-out "></div>
+            <div className="h-[0.8px] bg-white transition-all duration-500 ease-in-out"></div>
+            <div className="h-[0.8px] bg-white transition-all duration-500 ease-in-out"></div>
+            <div className="h-[0.8px] bg-white transition-all duration-500 ease-in-out"></div>
           </div>
           MENU
         </li>
         {showMenu && (
-          <div className="absolute top-[11vh] left-0 p-3 pl-0 py-12 bg-gradient-to-b from-[#464646] to-black w-fit border-b-2 border-white border-r-2">
-            <ul className="uppercase grid gap-6">
+          <div className="fixed top-[8vh] md:top-[8vh] lg:top-[8vh] left-0 md:p-0 pl-0 py-6 sm:py-4 md:py-8 lg:py-12 bg-gradient-to-b from-[#464646] to-black w-fit border-b-2 border-white border-r-2">
+            <ul className="uppercase grid gap-2 md:gap-4 lg:gap-6">
               {menuItems.map((item) => (
                 <li
-                  className="px-6 cursor-pointer py-2 text-white hover:bg-black rounded-sm"
+                  className="px-2 sm:px-4 md:px-6 pl-8 text-[10px] sm:text-[12px] md:text-[14px] cursor-pointer py-2 hover:bg-black rounded-sm text-white"
                   key={item.name}
                 >
                   <Link to={item.link}>{item.name}</Link>

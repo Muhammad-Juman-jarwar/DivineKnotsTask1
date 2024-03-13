@@ -28,7 +28,7 @@ export const menuItemsList: MenuItemListProps[] = [
 
 export const menuItems: menuItemsProps[] = [
   { name: "About", link: "#" },
-  { name: "1/1 Art", link: "#" },
+  { name: "1/1  Art", link: "#" },
   { name: "Editions", link: "#" },
   { name: "Leader Board", link: "#" },
   { name: "Runes", link: "#" },

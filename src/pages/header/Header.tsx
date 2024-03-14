@@ -29,8 +29,8 @@ const Header = () => {
   return (
     <div className="text-custom text-white w-full h-[100vh] bg-black">
       <div className="flex items-center justify-evenly py-3 md:py-6">
-        <div className="text-[#acacac]">gm@nome.gallery</div>
-        <div className="text-[#7c7b7b] tracking-wide md:tracking-widest text-md md:text-lg">
+        <div className="text-[#acacac] tracking-[0.1em]">gm@nome.gallery</div>
+        <div className="text-[#7c7b7b] tracking-[0.28em] text-[0.8em] md:text-[1em] lg:text-[1.3em]">
           ORDINALS GALLERY
         </div>
         <div className="flex gap-3 md:gap-6 opacity-70">

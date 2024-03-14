@@ -7,6 +7,8 @@
     src: url('/public/fonts/Menoe_Grotesque_Pro-Regular_TypeToday.ttf') format('truetype');
     font-family: 'Oswald';
     src: url('/public/fonts/Oswald-VariableFont_wght.ttf') format('truetype');
+    font-family: 'MenoeItalic';
+    src: url('/public/fonts/Menoe_Grotesque-Regular_Italic-Web.ttf');
 }
 
 .text-custom {
@@ -15,4 +17,8 @@
 
 .text-custom2 {
     font-family: "Oswald", sans-serif;
+}
+
+.text-custom3 {
+    font-family: "MenoeItalic", sans-serif;
 }

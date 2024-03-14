@@ -12,7 +12,7 @@ const MenuItemCard: React.FC<MenuItemCardProps> = ({
     <li
       className={
         item.classes ||
-        "border-2 border-white border-r-0 py-6 text-center w-full items-center justify-center text-xs md:text-md hover:w-[115%] transition-all duration-100 ease-linear hover:bg-gradient-to-b hover:from-[rgba(121,121,121,0.8)] hover:via-black hover:to-[rgba(121,121,121,0.8)] hidden md:flex"
+        "border-2 border-white border-r-0 py-6 text-center text-[0.8em] lg:text-[1.1em] w-full items-center justify-center text-xs md:text-md hover:w-[115%] transition-all duration-100 ease-linear hover:bg-gradient-to-b hover:from-[rgba(121,121,121,0.8)] hover:via-black hover:to-[rgba(121,121,121,0.8)] hidden md:flex"
       }
       key={index}
     >

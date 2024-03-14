@@ -6,7 +6,7 @@ const Footer = () => {
   const [showMenu, setShowMenu] = useState(false);
 
   return (
-    <div className="text-custom w-full h-auto">
+    <div className="text-custom w-full h-auto text-custom">
       <div className="bg-[#adadad] pt-12">
         <li
           className={
@@ -47,7 +47,7 @@ const Footer = () => {
           <h3 className="text-[#747474] text-center lg:text-left text-[0.6rem] md:text-[0.8rem] lg:text-[1rem] mb-2">
             GET IN TOUCH
           </h3>
-          <h2 className="text-[1.1rem] md:text-[1.4rem] text-center lg:text-left lg:text-[1.7rem]">
+          <h2 className="text-[1.1rem] md:text-[1.4rem] text-center lg:text-left lg:text-[1.7rem] text-custom3">
             gm@nome.gallery
           </h2>
           <div className="grid mt-10 md:mt-20">
@@ -58,7 +58,7 @@ const Footer = () => {
               >
                 <input
                   type="text"
-                  className="outline-none text-[0.8rem] md:text-[1rem] lg:text-[1.2rem] text-white bg-transparent w-full placeholder:text-[#747474]"
+                  className="outline-none text-[0.8rem] md:text-[1rem] lg:text-[1.2rem] text-white bg-transparent w-full placeholder:text-[#747474] tracking-[0.3em] "
                   placeholder={item.placeholder}
                 />
                 <img src={item.img} alt="" className="w-6 md:w-8" />
